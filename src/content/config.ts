@@ -31,7 +31,7 @@ const eventsCollection = defineCollection({
   }),
 });
 
-const sermonsCollection = defineCollection({
+const workshopCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
@@ -83,15 +83,18 @@ const blogCollection = defineCollection({
 const siteInfoCollection = defineCollection({
   type: 'content', // Could be 'data' if only frontmatter is needed
   schema: z.object({
-    title: z.string(), // For identifying the content block
+    name.z.string(),
+     // agregar esquema de infg y agregar en Footer, continuar  
+
   }),
 });
 
 export const collections = {
   staff: staffCollection,
   events: eventsCollection,
-  sermons: sermonsCollection,
+  workshops: workshopCollection,
   ministries: ministriesCollection,
   blog: blogCollection,
   siteInfo: siteInfoCollection,
 };
+

@@ -45,8 +45,10 @@ module.exports = {
         },
       },
       fontFamily: {
+        // Dejamos Playfair Display como tu fuente serif, ideal para títulos
         serif: ['"Playfair Display"', 'Georgia', 'serif'],
-        sans: ['"Source Sans Pro"', 'system-ui', 'sans-serif'],
+        // AQUÍ HACEMOS EL CAMBIO: Reemplazamos 'Source Sans Pro' por 'Montserrat'
+        sans: ['"Montserrat"', 'system-ui', 'sans-serif'],
       },
     },
   },
