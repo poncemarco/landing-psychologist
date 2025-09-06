@@ -49,13 +49,15 @@ const workshopCollection = defineCollection({
   }),
 });
 
-const ministriesCollection = defineCollection({
+const serviceCollection = defineCollection({
   type: 'content',
   schema: z.object({
     name: z.string(),
-    logo: z.string().startsWith('/uploads/ministries/').optional(),
+    logo: z.string().startsWith('/uploads/services/').optional(),
     summary: z.string(),
-    coordinator: z.string().optional(),
+    email: z.string().optional(),
+    phoneDisplay: z.string().optional(),
+    phone: z.string().optional(),
     contact: z.string().optional(), // Email or text
     schedule: z.string().optional(),
     order: z.number().optional(),
@@ -83,9 +85,7 @@ const blogCollection = defineCollection({
 const siteInfoCollection = defineCollection({
   type: 'content', // Could be 'data' if only frontmatter is needed
   schema: z.object({
-    name.z.string(),
-     // agregar esquema de infg y agregar en Footer, continuar  
-
+    title: z.string()
   }),
 });
 
@@ -93,7 +93,7 @@ export const collections = {
   staff: staffCollection,
   events: eventsCollection,
   workshops: workshopCollection,
-  ministries: ministriesCollection,
+  services: serviceCollection,
   blog: blogCollection,
   siteInfo: siteInfoCollection,
 };
