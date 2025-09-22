@@ -10,19 +10,11 @@ phone: "5546476943"
 
 ## Sobre mí
 
-Soy Psicologa, Especialista en Terapia Familiar y de Pareja con enfoque Sistémico, y
-formacion como Tanatologa. Cuento con una Maestría en Terapia Existencial y
-Fenomenologica, formacion que ha enriquecido profundamente mi manera de acompanar a
-las personas en sus procesos emocionales y existenciales.
-A lo largo de más de 20 años he colaborado en el ambito educativo desde el departamento
-psicopedagogico de diversas instituciones educativas, brindando orientacion, contencion y
-guía tanto a estudiantes como a docentes y familias.
-Ademas he participatdo como coautora en varios libros enfocados en Orientacion Educativa
-y Tutoria, aportando herramientas prácticas para el acompanamiento integral de ninas,
-niños y adolescentes.
-Mi compromiso es ofrecer un espacio terapeutico seguro, empaticoy respetuoso, en donde
-cada persona pueda explorar y comprender su experiencia de vida desde una mirada
-profunda y humana.
+Soy Psicóloga con más de 30 años de experiencia ofreciendo terapia emocional y acompañamiento tanto en consulta privada como en diversas instituciones educativas, trabajando tanto con niños, adolescentes y adultos, con familias y comunidades diversas.  A lo largo de este camino, he tenido el privilegio de estar presente en momentos significativos de la vida de muchas personas, brindando escucha, orientación y herramientas para atravesar procesos personales y familiares.
+Estoy especializada en Terapia Familiar y de Pareja con enfoque Sistémico, y cuento con formación en Tanatología, lo que me ha permitido acompañar con sensibilidad y respeto los procesos de pérdida, duelo y transformación. Además, obtuve una Maestría en Terapia Existencial y Fenomenológica, formación que ha enriquecido profundamente mi manera de comprender y acompañar las experiencias emocionales y existenciales del ser humano.
+Mi enfoque se basa en la presencia, la empatía y el respeto por la historia de cada persona. Creo firmemente que todos tenemos la capacidad de crecer y resignificar nuestras experiencias cuando encontramos un espacio seguro para hacerlo.
+Como terapeuta, entiendo que cada historia es única y merece ser escuchada sin juicios. Por eso, mi compromiso es ofrecer un espacio terapéutico seguro, empático y respetuoso, en donde cada persona pueda explorar y comprender su experiencia de vida desde una mirada profunda y humana. Desde esta base, acompaño procesos de transformación personal con una escucha activa y presencia genuina.
+
 
 ### SERVICIOS QUE OFREZCO
 

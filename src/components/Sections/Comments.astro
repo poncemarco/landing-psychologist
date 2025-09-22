@@ -1,0 +1,163 @@
+---
+// Array de reseñas. Fácil de expandir.
+const reviews = [
+  {
+    id: "review-1",
+    text: "Agradezco y valoro mucho su capacidad para empatizar, jamás juzgar y su manera tan profesional de lograr los objetivos de la terapia.",
+    author: "Ana Pérez"
+  },
+  {
+    id: "review-2",
+    text: "Desde el primer día, Alicia me hizo sentir escuchada, comprendida y acompañada. Su calidez, paciencia y forma de guiarme me han ayudado a sanar, crecer y volver a confiar en mí misma.",
+    author: "Carlos Gómez"
+  },
+  {
+    id: "review-3",
+    text: "Una experiencia increíblemente sanadora. El enfoque es muy humano y profesional. Me sentí seguro y comprendido en cada sesión.",
+    author: "María Rodríguez"
+  },
+]
+---
+
+<section 
+  class="py-20 bg-cover bg-center text-white"
+  style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/uploads/thank-you-bg.webp)"
+>
+  <div class="container">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">Reseñas</h2>
+      
+      <div class="carousel-container relative">
+        
+        {reviews.map((review, index) => (
+          <input 
+            type="radio" 
+            name="carousel-radio" 
+            id={`carousel-${index + 1}`} 
+            class="carousel-radio"
+            checked={index === 0}
+          />
+        ))}
+
+        <div class="carousel-slides-wrapper overflow-hidden">
+          <div class="carousel-slides flex transition-transform duration-500 ease-in-out">
+            {reviews.map((review) => (
+              <div class="carousel-slide min-w-full px-4">
+                <p class="text-xl mb-4 italic">"{review.text}"</p>
+                <p class="font-semibold">- {review.author}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="carousel-arrows">
+          {reviews.map((_, index) => {
+            const prevIndex = index === 0 ? reviews.length : index;
+            const nextIndex = index === reviews.length - 1 ? 1 : index + 2;
+            return (
+              <div class={`arrow-set arrow-set-${index + 1}`}>
+                <label for={`carousel-${prevIndex}`} class="arrow prev">‹</label>
+                <label for={`carousel-${nextIndex}`} class="arrow next">›</label>
+              </div>
+            )
+          })}
+        </div>
+        
+        <div class="carousel-dots mt-8 flex justify-center space-x-3">
+          {reviews.map((_, index) => (
+            <label 
+              for={`carousel-${index + 1}`} 
+              class="carousel-dot"
+            ></label>
+          ))}
+        </div>
+
+      </div>
+      </div>
+  </div>
+</section>
+
+<style is:global>
+  /* Ocultamos los radio buttons originales */
+  .carousel-radio {
+    display: none;
+  }
+
+  /* --- Lógica del movimiento --- */
+  /* Movemos el contenedor de slides basado en el radio que esté seleccionado */
+  #carousel-1:checked ~ .carousel-slides-wrapper .carousel-slides {
+    transform: translateX(0%);
+  }
+  #carousel-2:checked ~ .carousel-slides-wrapper .carousel-slides {
+    transform: translateX(-100%);
+  }
+  #carousel-3:checked ~ .carousel-slides-wrapper .carousel-slides {
+    transform: translateX(-200%);
+  }
+  /* Agrega más reglas si tienes más de 3 reseñas */
+
+  /* --- Estilos de las Flechas --- */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 3rem; /* 48px */
+    font-weight: bold;
+    color: white;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    user-select: none; /* Evita que el texto se seleccione */
+    padding: 0 1rem;
+  }
+  .arrow:hover {
+    opacity: 1;
+  }
+  .arrow.prev {
+    left: -10px;
+  }
+  .arrow.next {
+    right: -10px;
+  }
+
+  /* --- Lógica de las Flechas --- */
+  /* Solo mostramos el par de flechas que corresponde a la slide activa */
+  .arrow-set {
+    display: none;
+  }
+  #carousel-1:checked ~ .carousel-arrows .arrow-set-1 { display: block; }
+  #carousel-2:checked ~ .carousel-arrows .arrow-set-2 { display: block; }
+  #carousel-3:checked ~ .carousel-arrows .arrow-set-3 { display: block; }
+  /* Agrega más reglas si tienes más de 3 reseñas */
+
+  /* --- Estilos de los Puntos de Navegación --- */
+  .carousel-dot {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  .carousel-dot:hover {
+    opacity: 0.8;
+  }
+
+  /* --- Lógica de los Puntos de Navegación --- */
+  /* Resaltamos el punto de la slide activa */
+  #carousel-1:checked ~ .carousel-dots label[for="carousel-1"],
+  #carousel-2:checked ~ .carousel-dots label[for="carousel-2"],
+  #carousel-3:checked ~ .carousel-dots label[for="carousel-3"] {
+    opacity: 1;
+  }
+  /* Agrega más selectores si tienes más reseñas */
+
+  @media (max-width: 768px) {
+    .arrow {
+      font-size: 2.25rem; /* 36px */
+    }
+    .arrow.prev { left: 0; }
+    .arrow.next { right: 0; }
+  }
+</style>

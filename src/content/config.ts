@@ -42,7 +42,7 @@ const workshopCollection = defineCollection({
     scripture: z.string().optional(),
     audioUrl: z.string().url().optional(),
     videoUrl: z.string().url().optional(),
-    image: z.string().startsWith('/uploads/sermons/').optional(), // Thumbnail
+    image: z.string().startsWith('/uploads/workshops/').optional(), // Thumbnail
     summary: z.string().optional(),
     tags: z.array(z.string()).optional(),
     draft: z.boolean().default(false),

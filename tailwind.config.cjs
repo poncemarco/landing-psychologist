@@ -5,17 +5,17 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#172554',
+          50: '#FBF9F7',  // Muy claro, casi blanco
+          100: '#EAE5DE',
+          200: '#D5CDC0',
+          300: '#BFB5A2',
+          400: '#AA9C84',
+          500: '#94846B',  // Tono ligeramente más oscuro que el original para un buen contraste
+          600: '#7F6D55',  // Tu color original estaría muy cerca de aquí o 500
+          700: '#6A5842',
+          800: '#544431',
+          900: '#3F3223',
+          950: '#2A2016',  // Muy oscuro, casi negro
         },
         secondary: {
           50: '#faf5ff',
