@@ -16,8 +16,7 @@ draft: false
 
 ¿Qué sentido tiene lo que me está pasando? ¿Cómo
 sigo adelante después de una pérdida o un quiebre?
-
-En ciertos momentos, el malestar no se expresa solo con síntomas. Se manifiesta como
+En ciertos momentos podemos sentir un gran malestar que se manifiesta con vacío, el malestar no se expresa solo con síntomas. Se manifiesta como
 vacío, confusión, angustia, tristeza profunda o desconexión con uno mismo y con el mundo.
 Desde la terapia existencial y fenomenológica, no se trata de etiquetar lo que sientes, sino
 de **abrir un espacio para vivirlo con conciencia, presencia y respeto.**

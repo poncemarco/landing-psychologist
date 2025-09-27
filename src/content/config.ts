@@ -46,6 +46,7 @@ const workshopCollection = defineCollection({
     summary: z.string().optional(),
     tags: z.array(z.string()).optional(),
     draft: z.boolean().default(false),
+    location: z.string()
   }),
 });
 
