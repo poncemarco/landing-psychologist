@@ -1,7 +1,7 @@
 ---
 name: "Terapia Individual"
 slug: "terapia-individual"
-logo: "/uploads/services/childrens-ministry-logo.webp"
+logo: "/uploads/services/terapia-individual.png"
 summary: "Un espacio para habitar tu experiencia, darle sentido a lo vivido y reconectar contigo mismo."
 email: "marialy29@gmail.com"
 phone: "5532076963"

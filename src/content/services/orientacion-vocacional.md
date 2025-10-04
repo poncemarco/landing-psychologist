@@ -1,7 +1,7 @@
 ---
 name: "Orientación Vocacional y Educativa"
 slug: "orientacion-vocacional-y-educativa"
-logo: "/uploads/services/community-outreach-logo.webp"
+logo: "/uploads/services/educative-service.png"
 summary: "Acompañamiento profesional para elegir con conciencia y confianza"
 coordinator: "Mark Thompson"
 contact: "outreach@churchname.org"

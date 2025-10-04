@@ -1,7 +1,7 @@
 ---
 name: "Terapia Familiar y de Pareja"
 slug: "terapia-familiar-y-de-pareja"
-logo: "/uploads/services/mens-ministry-logo.webp"
+logo: "/uploads/services/family-service.jpg"
 summary: "Un espacio para comprender, transformar y volver a elegirse."
 coordinator: "Robert Johnson"
 contact: "mens@churchname.org"
