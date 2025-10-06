@@ -27,13 +27,13 @@ const { Content } = await entry.render();
 ---
 
 <BaseLayout
-  title={`${entry.data.name} - Church Name`}
+  title={`${entry.data.name} - Servicios`}
   description={entry.data.summary}
   image={entry.data.logo ? { url: entry.data.logo, alt: entry.data.name } : undefined}
 >
   <PageHeader 
     title={entry.data.name} 
-    backgroundImage="/uploads/ministry-detail-bg.webp"
+    backgroundImage="/uploads/cover-services.jpeg"
   />
   
   <section class="py-16">
@@ -95,11 +95,11 @@ const { Content } = await entry.render();
             </div>
             
             <div class="flex flex-col space-y-3">
-              <Button href="/contact?subject=Ministry+Inquiry" variant="primary">
+              <Button href="https://wa.link/83mmtt" variant="primary">
                 Agenda una sesión
               </Button>
               
-              <Button href="/ministries" variant="outline">
+              <Button href="/servicios" variant="outline">
                 Ver más terapias
               </Button>
             </div>
